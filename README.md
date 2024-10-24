@@ -1,3 +1,7 @@
 # Efficient-Data-Stream-Anomaly-Detection
 
-The data stream simulation in this project generates a sequence of data points that mimic a real-time stream. It uses a sine wave pattern with added random noise to simulate normal data. Occasionally, anomalies are introduced by adding a large, random value to simulate abnormal behavior. The simulation runs for a specified number of iterations (`n=1000` by default) and yields one data point at a time, making it ideal for testing anomaly detection in a streaming context.
+•	Data Stream Simulation: This function generates a stream of values, with occasional anomalies added randomly.
+•	Z-Score Anomaly Detector: Uses a sliding window to compute mean and standard deviation, and detects anomalies based on the Z-Score.
+•	Isolation Forest Anomaly Detector: Uses Isolation Forest to identify anomalies based on the assumption that anomalies are few and different from the rest of the data.
+•	One-Class SVM Detector: Uses Support Vector Machines to identify anomalies by learning from the data and separating the normal points from anomalies.
+•	Visualization: A real-time plot that shows the data stream, marking anomalies with red dots as they are detected.
